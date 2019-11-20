@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+		<!--
+        	作者：offline
+        	时间：2019-09-19
+        	描述：action：提交的后台地址url
+                          method：提交方式：
+                                             常用：get   post
+                                             
+                区别：
+                                  get：
+                                   1.不适合填写敏感数据，举例：密码输入框的内容
+                                              不管前端校验还是后端校验：密码的内容都会被加密
+                                   2.  提交的数据最终在地址栏上显示：key1=value1&k2=value2......
+                                  post：
+                                   1.适合敏感数据
+                                    2.不会将数据显示在地址栏，提交数据大小显示
+                                   显示的内容是在：请求头：request-header
+                                    实体内容：username=wangwu&password=123456
+                            name属性：作为系统后台的一个标记
+                           
+                    
+               表单 必填属性：name = "username"; 给系统后台进行标记
+       type = “text”文本输入框
+       type = “password”密码输入框
+       type = “radio”单选按钮
+       type = “checkbox”复选框（多选）
+       type = “hidden”隐藏域
+       type = “file”上传文件
+       type = "submit"  提交
+        type = “reset” 重置
+       type = “button”value = “xx”普通按钮
+       Type = “date”日期组件
+        -->
+	</head>
+	<body>
+		<form action="#" method="get">
+			用户名:<input type="text" name="username" /> <br/>
+			密&nbsp;&nbsp;码:<input type="password" name="password"/> <br/>
+			<input type="submit" value="注册" />
+			
+		</form>
+	</body>
+</html>
